@@ -1,0 +1,1 @@
+ubuntu -c python3 main.py

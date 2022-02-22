@@ -8,11 +8,15 @@ import talib
 from binance.client import Client
 from config import *
 from Bot import Bot
+from Backtest import Backtest
 
 
 print("--- CRYPTO TRADING BOT ---\n")
 bot = Bot()
+# bot = Backtest()
 bot.run()
+# import cProfile
+# cProfile.run('bot.run()')
 
 
 # plt.plot(df['Open Time'], df['Close'])

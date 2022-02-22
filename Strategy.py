@@ -36,7 +36,7 @@ def strategyCalculator(ema8, ema13, ema21, ema34, ema55, rsi, kFast):
     return (enterLongCondition, exitLongCondition)
 
 
-def calculateIndicators(klines):
+def calculateIndicators(klines, kline4H):
     ema8 = talib.EMA(klines['Close'], timeperiod=8)
     ema13 = talib.EMA(klines['Close'], timeperiod=13)
     ema21 = talib.EMA(klines['Close'], timeperiod=21)
@@ -55,4 +55,4 @@ def calculateIndicators(klines):
     kFast, dFast = talib.STOCHF(
         klines['High'], klines['Low'], klines['Close'],  fastk_period=14)
 
-    return (ema8, ema13, ema21, ema34, ema55, rsi, kFast)
+    return strategyDecision(ema8, ema13, ema21, ema34, ema55, rsi, kFast)

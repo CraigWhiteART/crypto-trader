@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Find Best Tokens",
+            "type": "python",
+            "request": "launch",
+            "program": "find_best_tokens.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Backtest Best Tokens",
+            "type": "python",
+            "request": "launch",
+            "program": "main_backtest.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Start Main Bot",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
